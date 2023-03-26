@@ -29,7 +29,7 @@ public class SendEmailServlet extends HttpServlet {
 		
 		String subject = "[Community 프로젝트] 회원 가입 이메일 인증번호"; // 제목
 		
-		String fromEmail = "dheotjd87@gmail.com"; // 보내는 사람으로 표시될 이메일
+		 // 보내는 사람으로 표시될 이메일
 		String fromUsername = "관리자"; // 보내는 사람 이름
 		String toEmail = inputEmail; // 받는 사람, 콤마(,)로 어려개 나열 가능
 		
@@ -39,8 +39,7 @@ public class SendEmailServlet extends HttpServlet {
 		// 	1) 2단계 인증추가
 		// 	2) 앱 비밀번호 생성(메일, 서버컴퓨터 os) -> 저장해두기 (bqjteunlpnnxirad)
 		
-		final String smtpEmail = "dheotjd87@gmail.com"; // 이메일
-		final String password = "bqjteunlpnnxirad"; // 발급받은 비밀번호
+		
 		
 		// 메일 옵션 설정
 		Properties props = new Properties();
